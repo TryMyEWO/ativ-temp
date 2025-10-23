@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velozes e Furiosos - A Saga</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: #f4f4f4; /* Um fundo cinza claro */
+        }
+        .navbar {
+            background-color: #000 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: #ffc107 !important; /* Amarelo/Dourado no hover */
+        }
+        
+        /* Ajuste para as imagens do carrossel */
+        .carousel-item img {
+            height: 60vh; /* Altura do carrossel */
+            object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+            filter: brightness(0.7); /* Escurece a imagem para o texto aparecer */
+        }
+        
+        .section-title {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Estilo dos Cards */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.04);
+        }
+        .card-img-top {
+            height: 250px; /* Altura fixa para as imagens dos cards */
+            object-fit: cover; /* Garante que a imagem preencha o espaço */
+        }
+        .card-title {
+            color: #000;
+            font-weight: bold;
+        }
+        .card-body {
+            background-color: #fff;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VELOZES E FURIOSOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personagens">Personagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carros">Carros Icônicos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/fam.jpg" class="d-block w-100" alt="Carros da franquia">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>A Franquia</h5>
+                    <p>Mais de 20 anos de velocidade, ação e família.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/foda.jpg" class="d-block w-100" alt="Cena de ação">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cenas de Ação</h5>
+                    <p>Manobras impossíveis que desafiam a gravidade.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/mais imp.jpg" class="d-block w-100" alt="A família">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>O Mais Importante: A Família</h5>
+                    <p>O lema que une todos os personagens.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="sobre" class="my-5">
+            <h2 class="section-title">Sobre a Saga</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="lead"><strong>Velozes e Furiosos</strong> (The Fast and the Furious) é uma franquia de filmes de ação centrada em corridas de rua ilegais, assaltos e espionagem.</p>
+                    <p>O que começou como um filme sobre corridas de rua em Los Angeles evoluiu para uma das maiores sagas de ação do cinema mundial, abrangendo diversos países e focando no tema central da "família" formada pelos personagens. A franquia é conhecida por suas cenas de ação exageradas, carros velozes e um elenco carismático.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/drift.jpg" alt="Pôster da franquia" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens" class="my-5">
+            <h2 class="section-title">Personagens Principais</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/dominic.jpg" class="card-img-top" alt="Foto do Dom Toretto">
+                        <div class="card-body">
+                            <h5 class="card-title">Dominic Toretto</h5>
+                            <p class="card-text">O patriarca da "família". Um exímio piloto de rua e mecânico, movido pela lealdade e seu código moral.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/connor.jpg" class="card-img-top" alt="Foto do Brian O'Conner">
+                        <div class="card-body">
+                            <h5 class="card-title">Brian O'Conner</h5>
+                            <p class="card-text">O policial que se infiltrou no mundo das corridas e acabou se tornando parte da família de Toretto.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/letty.jpg" class="card-img-top" alt="Foto da Letty Ortiz">
+                        <div class="card-body">
+                            <h5 class="card-title">Letty Ortiz</h5>
+                            <p class="card-text">Uma piloto incrivelmente habilidosa e leal, parceira de longa data de Dominic Toretto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carros" class="my-5">
+            <h2 class="section-title">Carros</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/Dodge Charger.jpg" class="card-img-top" alt="Dodge Charger R/T 1970">
+                        <div class="card-body">
+                            <h5 class="card-title">Dodge Charger R/T 1970</h5>
+                            <p class="card-text">O carro símbolo de Dom Toretto. Um *muscle car* clássico, famoso por seu poder bruto e o supercharger exposto.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/suprq.jpg" class="card-img-top" alt="Toyota Supra MK IV 1994">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Supra MK IV 1994</h5>
+                            <p class="card-text">O carro laranja icônico de Brian no primeiro filme. Um símbolo da cultura JDM (Japanese Domestic Market).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/skyline.jpg" class="card-img-top" alt="Nissan Skyline GT-R R34">
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan Skyline GT-R R34</h5>
+                            <p class="card-text">O carro preferido de Brian na sequência. O Skyline azul/prata é um dos carros mais amados da franquia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. Site de fã sobre Velozes e Furiosos. Atividade de desenvolvimento web.</p>
+            <p>Todas as imagens e marcas pertencem à Universal Pictures.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
